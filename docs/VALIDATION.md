@@ -13,6 +13,8 @@ Host validation date: 2026-10-14. This receipt intentionally excludes personal p
 - DPAPI-protected snapshot and ledger roundtrip passed.
 - A bounded local visual capture completed; no real-work-session images are included here.
 - WPF demo rendering checked at 1080x740 and 780x520 using synthetic data.
+- The self-contained Windows x64 executable passed the same native restoration scenario.
+- GitHub CI independently built the application, ran the core checks and published a Windows x64 artifact: https://github.com/29988122/resume-desktop/actions/runs/38549959534
 - Actual Explorer process termination, Windows reboot, multi-monitor/DPI transitions and extended recorder soak were not performed.
 
 Reproduce with the commands in CONTRIBUTING.md. Live integration evidence must remain local unless manually reviewed and redacted.

@@ -13,6 +13,8 @@ States: **已實作且已驗證 / implemented and verified**, **已實作但待�
 - Read-only live Explorer probe: **passed**.
 - Native smoke: **passed**, two windows / four tabs, duplicate paths, active-tab restoration, repeated recovery, genuine close-and-reopen recovery, Explorer relative stacking and preservation of existing Explorer windows.
 - Current-user DPAPI and screenshot capture: **passed** during local capture and native recovery.
+- Published self-contained Windows x64 executable: **native smoke passed**.
+- GitHub Actions build/core checks: [passed](https://github.com/29988122/resume-desktop/actions/runs/38549959534).
 
 ## Capability matrix
 
