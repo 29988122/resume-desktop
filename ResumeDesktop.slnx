@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="src/ResumeDesktop.Core/ResumeDesktop.Core.csproj" />
+  <Project Path="src/ResumeDesktop.Windows/ResumeDesktop.Windows.csproj" />
+  <Project Path="src/ResumeDesktop.App/ResumeDesktop.App.csproj" />
+  <Project Path="tests/ResumeDesktop.Tests/ResumeDesktop.Tests.csproj" />
+</Solution>

@@ -1,0 +1,13 @@
+<Project>
+  <PropertyGroup>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <LangVersion>latest</LangVersion>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <Deterministic>true</Deterministic>
+    <PathMap>$(MSBuildProjectDirectory)=/_/$(MSBuildProjectName)</PathMap>
+    <Version>0.1.0</Version>
+    <Authors>Resume Desktop contributors</Authors>
+    <RepositoryUrl>https://github.com/29988122/resume-desktop</RepositoryUrl>
+  </PropertyGroup>
+</Project>

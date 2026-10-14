@@ -1,0 +1,25 @@
+name: Build and core checks
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  windows:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          global-json-file: global.json
+      - run: dotnet build src/ResumeDesktop.App -c Release
+      - run: dotnet run --project tests/ResumeDesktop.Tests -c Release
+      - run: dotnet publish src/ResumeDesktop.App -c Release -r win-x64 --self-contained true -o artifacts/win-x64
+      - shell: pwsh
+        run: |
+          Copy-Item README.md, README.en.md, LICENSE, THIRD_PARTY_NOTICES.md, CONTRIBUTING.md -Destination artifacts/win-x64
+          Copy-Item docs -Destination artifacts/win-x64 -Recurse
+      - uses: actions/upload-artifact@v4
+        with:
+          name: resume-desktop-win-x64
+          path: artifacts/win-x64

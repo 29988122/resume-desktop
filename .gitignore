@@ -1,0 +1,11 @@
+**/bin/
+**/obj/
+.vs/
+.idea/
+artifacts/
+local-data/
+local-evidence/
+*.user
+*.rdstate
+*.rdasset
+*.partial

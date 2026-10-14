@@ -1,0 +1,18 @@
+name: Bug report / 問題回報
+description: Report a reproducible problem without private data.
+body:
+  - type: textarea
+    attributes:
+      label: Expected and observed behavior / 預期與實際行為
+      description: Include reproduction steps. Do not include private paths or real screenshots.
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: Windows build and Explorer version
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Redacted diagnostics / 去識別診斷
+      description: State whether you used a real Explorer window, demo data, or a simulated crash.
